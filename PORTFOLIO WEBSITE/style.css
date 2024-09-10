@@ -1,0 +1,267 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+}
+.portfolio-container{
+    
+    width: 100%;
+    display: flex;
+}
+    
+
+.navlist{
+    display: flex;
+    gap: 3.5rem;
+    background-color: gray;
+    height: 15vh;
+    width: 100%;
+    
+    justify-content: center;
+    align-items: center;
+    
+}
+.navlist li{
+    list-style: none;
+}   
+.navlist li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: black;
+    position: relative;
+}
+.left-container{
+    height: 100vh;
+    
+    width: 70%;
+    padding-left: 3rem;
+    display:flex;
+    
+    align-items: center;
+}
+.icons .fa-brands{
+    color: #bbb;
+    font-size: 1.7rem;
+    
+    
+
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.content{
+    margin-left: 4rem;
+}
+.content .intro{
+    font-size: 1.5rem;
+    
+}
+.content.intro span{
+    color: navy;
+}
+.content h1{
+     font-size: 4rem;
+     color: navy;
+}
+.content .detail{
+    
+    font-size: 1.1rem;
+    color: black;
+    max-width: 38rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.8rem;
+}
+
+.btn-container button{
+    margin-top:  5.5rem;
+    background: black;
+    color: white;
+    border: .1rem solid black;
+    font-size: 1.1rem;
+    padding: .8rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+
+
+}
+button:nth-child(1):hover{
+    background: transparent;
+    color: black;
+}
+.icons .fa-brands:hover{
+    cursor: pointer;
+    background: linear-gradient(white,navy);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.icons .fa-regular:hover{
+    cursor: pointer;
+    background: linear-gradient(white,navy);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.design .circle{
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left : 70%;
+    transform: translate(-50% , -50%);
+  
+    
+}
+.circle:nth-child(1){
+   
+    width: 20rem;
+    background-image: url("image/female.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: .1rem solid gray;
+    box-shadow:  0 0 1rem black;
+ 
+}
+
+.navlist .active::after{
+    content: "";
+    position: absolute;
+    background:white;
+    width: 100%;
+    height: .1rem;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .5s;
+
+}
+.navlist li a:hover::after , .navlist .active::after {
+
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.about
+{
+    height: 100svh;
+    width: 100vw;
+    padding: 5rem;
+    display:flex;
+    justify-content: right;
+   align-items: baseline;
+    font-size: 1.5rem;
+    background-color: rgb(202, 194, 195);
+
+}
+
+
+.skills{
+    min-height: 100vh;
+    gap:  3.5rem;
+    width: 100%;
+    background-color: rgb(198, 164, 143);
+    padding: 5rem;
+    display: center;
+    justify-content: left;
+    align-items: left;
+    font-size: 1rem; 
+    
+
+}
+.ill .right{
+    margin: 3.8rem 2rem;
+}
+.ill{
+    margin-right: 1em;
+		float: left; 
+}
+.right{
+    order: 1;
+		margin-left: 3.8rem;
+		float: right;
+        text-size-adjust: 2.5rem;
+        max-width: 32rem;
+        margin-bottom: 2px;
+}
+.left{
+
+    order: 1;
+		margin-left: 3.8rem;
+		float: right;
+        text-size-adjust: 2.5rem;
+        max-width: 32rem;
+
+}
+
+@media (min-width: 20rem)
+{
+	.ill, .right .left
+	{
+		display: flex;
+		align-items: right;
+        -ms-text-combine-horizontal: all;
+	}
+}    
+.ill{
+    max-width: 28rem;
+    margin: 1.1rem 0 2rem 0;
+    line-height: 1.8rem;
+
+}
+@media (min-width: 30em)
+{
+	.right, .left
+	{
+		flex-shrink: 0;
+	}
+}
+ 
+.right h4{
+    max-width: 20rem;
+    max-height: auto;
+    text-align: right;
+    line-height: 1.8rem;
+    font-size: 1rem;
+}
+.about .pic{
+    margin-top: 5px;
+
+    margin-right:50px;
+    
+    margin-bottom: 30px;
+    
+    margin-left: 20px;   
+    
+} 
+.page {
+    flex-basis: 44%;
+
+    margin-bottom: 5%;
+    text-align: center;
+    padding: 25px;
+    cursor: pointer;
+    height: 100vh;
+    width: 100vw;
+    background: rgb(231, 174, 174);
+    padding: 100px;
+    
+    
+}
+.page h2{
+
+    margin-top: 100px;
+    
+
+}
+
+
+
